@@ -18,7 +18,6 @@ public class SessionEventListener implements ApplicationListener<SessionDeletedE
 
     private static final String CURRENT_USER = "currentUser";
 
-    @Override
     public void onApplicationEvent(SessionDeletedEvent event) {
         Session session = event.getSession();
         UserVo userVo = session.getAttribute(CURRENT_USER);

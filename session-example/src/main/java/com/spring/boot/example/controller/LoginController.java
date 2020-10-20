@@ -3,7 +3,6 @@ package com.spring.boot.example.controller;
 import com.spring.boot.example.vo.LoginVo;
 import com.spring.boot.example.vo.UserVo;
 import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
 import javax.servlet.http.HttpServletRequest;
@@ -27,7 +26,7 @@ public class LoginController {
      * @author huaijin
      */
     @PostMapping("/login.do")
-    public String login(@RequestBody LoginVo loginVo, HttpServletRequest request) {
+    public String login(LoginVo loginVo, HttpServletRequest request) {
         UserVo userVo = UserVo.builder().userName(loginVo.getUserName())
                 .userPassword(loginVo.getUserPassword()).build();
         HttpSession session = request.getSession();
