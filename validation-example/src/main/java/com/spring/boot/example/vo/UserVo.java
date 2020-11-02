@@ -1,8 +1,11 @@
 package com.spring.boot.example.vo;
 
+import com.spring.boot.example.validation.BankCardNumber;
 import com.spring.boot.example.validation.IdentityCardNumber;
 import com.spring.boot.example.validation.PhoneNumber;
 import lombok.Data;
+
+import javax.validation.constraints.NotBlank;
 
 /**
  * @author: shish@kltb.com.cn
@@ -12,8 +15,10 @@ import lombok.Data;
 @Data
 public class UserVo {
 
+    @NotBlank
     private String userName;
 
+    @NotBlank
     private String userPassword;
 
     @PhoneNumber
@@ -23,4 +28,7 @@ public class UserVo {
 
     @IdentityCardNumber(message = "身份证信息有误")
     private String idCardNo;
+
+    @BankCardNumber
+    private String bankCardNo;
 }
