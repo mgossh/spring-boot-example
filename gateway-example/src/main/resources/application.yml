@@ -1,0 +1,9 @@
+server:
+ port: 8080
+ servlet.context-path: /gateway-example
+
+spring:
+  application:
+    name: gateway-example
+  profiles:
+    active: dev

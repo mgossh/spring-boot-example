@@ -1,0 +1,9 @@
+server:
+ port: 8080
+ servlet.context-path: /feign-example
+
+spring:
+  application:
+    name: feign-example
+  profiles:
+    active: dev
