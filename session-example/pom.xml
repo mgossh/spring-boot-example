@@ -11,7 +11,7 @@
 	<description>Demo project for Spring Boot Session</description>
 
 	<parent>
-		<groupId>spring-boot-example</groupId>
+		<groupId>com.mgo.example</groupId>
 		<artifactId>parent</artifactId>
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
