@@ -6,7 +6,7 @@ spring:
   profiles:
     active: dev
   application:
-    name: session-
+    name: layercache-example
 
 layering-cache:
   namespace: layering-cache-web
@@ -16,17 +16,3 @@ layering-cache:
     host: 127.0.0.1
     port: 6379
     password:
-
-#    #layering-cache 配置
-#    layering-cache.stats=true
-#    # 缓存命名空间，如果不配置取 "spring.application.name"
-#    layering-cache.namespace=layering-cache-web
-#
-#    # redis单机
-#    layering-cache.redis.database=0
-#    layering-cache.redis.host=127.0.0.1
-#    layering-cache.redis.port=6379
-#    layering-cache.redis.password=
-#    # redis集群
-#    #layering-cache.redis.password=
-#    #layering-cache.redis.cluster=127.0.0.1:6379,127.0.0.1:6378

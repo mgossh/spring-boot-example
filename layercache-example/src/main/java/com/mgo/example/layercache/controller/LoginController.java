@@ -23,7 +23,7 @@ public class LoginController {
     }
 
     @GetMapping(value = "/get")
-    public UserVo get(String id) {
-        return loginService.getUser(id);
+    public UserVo get(String id, String name) {
+        return loginService.getUser(id, name);
     }
 }
